@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Node.js Multiplayer Drawing Game | Tutorialzine Demo</title>
+        
+        <!-- The stylesheets -->
+        <link rel="stylesheet" href="styles.css" />
+        
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- fullpage (one page scrolling) -->
+        <script type="text/javascript" src="fullpage/scrolloverflow.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+        <script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
+        <!-- JavaScript includes. Notice that socket.io.js is served by node.js -->
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+        <script src="sketch.js"></script>
+
+    </head>
+    
+    <body>
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="intro">
+              <h1>Section 1</h1>
+              <p>
+                Use the `navigationTooltips` option to use a text for each of the bullets in the navigation element.
+              </p>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <h1>Section 2</h1>
+        </div>
+        <div class="section" id="section2">
+            <h1>Section 3</h1>
+        </div>
+        <div class="section" id="section3">
+            <h1>Section 3</h1>
+        </div>
+        <div class="section" id="section4">
+            <h1>Section 3</h1>
+        </div>
+    </div>
+
+    <div id="blue-container">
+
+        <div class="section-holder"></div>
+    </div>
+    <div id="cursors">
+        <!-- The mouse pointers will be created here -->
+    </div>
+    <div id="toolbar">
+        <div id="color-picker-container">
+            <div id="color-picker" class="dot black"></div>
+            <div id="color-picker-extended">
+
+                <div id="first-dot" class="dot black"></div>
+                <div class="dot blue"></div>
+                <div class="dot purple"></div>
+                <div class="dot pink"></div>
+                <div class="dot red"></div>
+                <div class="dot orange"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+                <div class="dot teal"></div>
+            </div>
+        </div>
+        <div id="pencil-container">
+            <div id="pencil-shadow" class="shadow"></div>
+            <img id="pencil" src="icons/pencil.png">
+        </div>
+        <div id="pen-container">
+            <img id="pen" src="icons/pen.png">
+        </div>
+
+        <div id="eraser-container">
+            <img id="eraser" src="icons/eraser.png">
+        </div>
+    </div>
+
+        
+    </body>
+</html>

@@ -1,0 +1,106 @@
+body{
+    background: rgb(30, 30, 30);
+}
+
+.bubble{
+    border-radius: 5px;
+    padding: 10px;
+    
+    font-size: 2em;
+    margin-top: 30vh;
+    max-width: 25vw;
+    min-width: 10vw;
+    min-height: 5vh;
+
+}
+
+p{
+    margin: 0;
+}
+
+#gray_text{
+    z-index: 1;
+    position: absolute;
+    color: rgb(170, 160, 170);
+    padding-right: 10px;
+
+}
+
+#white_text{
+    z-index: 2;
+    position: absolute;
+    padding-right: 10px;
+}
+#B_full_text{
+    opacity: 0;
+    position: relative;
+}
+
+#B{
+    font-family: "Sue Ellen Francisco", cursive;
+    float: right !important;
+    color: rgb(30, 30, 30);
+    margin-right: 200px;
+    
+}
+/* speech bubble arrow code referenced from https://leaverou.github.io/bubbly/*/
+#B .speech-bubble:after {
+    content: '';
+    position: absolute;
+
+    right: 0;
+    top: 70%;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-left-color: white;
+    border-right: 0;
+    border-top: 0;
+    margin-top: -6px;
+    margin-right: -8px;
+}
+
+#B .bubble{
+    background: white;
+}
+
+.speech-bubble {
+    position: relative;
+/*    background: #00aabb;*/
+    border-radius: .4em;
+
+}
+
+#A .speech-bubble:after {
+    content: '';
+    position: absolute;
+    
+    left: 0;
+    top: 70%;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-right-color: rgb(128, 50, 140);
+    border-left: 0;
+    border-top: 0;
+    margin-top: -6px;
+    margin-left: -8px;
+}
+
+
+
+#A {
+    font-family: "Reenie Beanie";
+    display: none;
+    float: left !important;
+    margin-left: 200px;
+}
+
+#A .bubble{
+    /*background: #0084ff;*/
+
+    background: rgb(128, 50, 140);
+    color: white;
+/*    float: left;*/
+/*    margin-left: 200px;*/
+}
